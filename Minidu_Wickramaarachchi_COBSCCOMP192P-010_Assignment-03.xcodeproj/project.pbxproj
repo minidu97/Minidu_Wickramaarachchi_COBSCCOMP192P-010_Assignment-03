@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0E1BC31C63908395F4A721 /* Pods_Minidu_Wickramaarachchi_COBSCCOMP192P_010_Assignment_03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8423885ABE0DB4369D0040BC /* Pods_Minidu_Wickramaarachchi_COBSCCOMP192P_010_Assignment_03.framework */; };
+		92CB7F0925EBC235004BFAA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92CB7F0825EBC235004BFAA9 /* GoogleService-Info.plist */; };
 		92F6A99225E8E01800381587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6A99125E8E01800381587 /* AppDelegate.swift */; };
 		92F6A99425E8E01800381587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6A99325E8E01800381587 /* SceneDelegate.swift */; };
 		92F6A99625E8E01800381587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F6A99525E8E01800381587 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8423885ABE0DB4369D0040BC /* Pods_Minidu_Wickramaarachchi_COBSCCOMP192P_010_Assignment_03.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minidu_Wickramaarachchi_COBSCCOMP192P_010_Assignment_03.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CB7F0825EBC235004BFAA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92F6A98E25E8E01800381587 /* Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F6A99125E8E01800381587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F6A99325E8E01800381587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		92F6A99A25E8E01900381587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92F6A99D25E8E01900381587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92F6A99F25E8E01900381587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4E3D3EB8BC2982D8B8D571 /* Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.release.xcconfig"; path = "Target Support Files/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.release.xcconfig"; sourceTree = "<group>"; };
+		D5CAF21A214A86042218AC2D /* Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.debug.xcconfig"; path = "Target Support Files/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0E1BC31C63908395F4A721 /* Pods_Minidu_Wickramaarachchi_COBSCCOMP192P_010_Assignment_03.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				92F6A99025E8E01800381587 /* Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03 */,
 				92F6A98F25E8E01800381587 /* Products */,
+				99226855CED020862504DF27 /* Pods */,
+				B9D3658249461830C77A9609 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +71,28 @@
 				92F6A99725E8E01800381587 /* Main.storyboard */,
 				92F6A99A25E8E01900381587 /* Assets.xcassets */,
 				92F6A99C25E8E01900381587 /* LaunchScreen.storyboard */,
+				92CB7F0825EBC235004BFAA9 /* GoogleService-Info.plist */,
 				92F6A99F25E8E01900381587 /* Info.plist */,
 			);
 			path = "Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03";
+			sourceTree = "<group>";
+		};
+		99226855CED020862504DF27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5CAF21A214A86042218AC2D /* Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.debug.xcconfig */,
+				BF4E3D3EB8BC2982D8B8D571 /* Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9D3658249461830C77A9609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8423885ABE0DB4369D0040BC /* Pods_Minidu_Wickramaarachchi_COBSCCOMP192P_010_Assignment_03.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92F6A9A225E8E01900381587 /* Build configuration list for PBXNativeTarget "Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03" */;
 			buildPhases = (
+				27273AA7BC6E6A3FEBCB1050 /* [CP] Check Pods Manifest.lock */,
 				92F6A98A25E8E01800381587 /* Sources */,
 				92F6A98B25E8E01800381587 /* Frameworks */,
 				92F6A98C25E8E01800381587 /* Resources */,
+				886F29A3F0B42E9461547D87 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F6A99E25E8E01900381587 /* LaunchScreen.storyboard in Resources */,
+				92CB7F0925EBC235004BFAA9 /* GoogleService-Info.plist in Resources */,
 				92F6A99B25E8E01900381587 /* Assets.xcassets in Resources */,
 				92F6A99925E8E01800381587 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27273AA7BC6E6A3FEBCB1050 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886F29A3F0B42E9461547D87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03/Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92F6A98A25E8E01800381587 /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		92F6A9A325E8E01900381587 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5CAF21A214A86042218AC2D /* Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +375,7 @@
 		};
 		92F6A9A425E8E01900381587 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF4E3D3EB8BC2982D8B8D571 /* Pods-Minidu_Wickramaarachchi_COBSCCOMP192P-010_Assignment-03.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
