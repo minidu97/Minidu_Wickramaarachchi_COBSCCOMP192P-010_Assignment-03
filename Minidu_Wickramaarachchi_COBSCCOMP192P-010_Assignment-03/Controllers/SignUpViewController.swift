@@ -16,6 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phone_number: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var confPW: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,15 +25,21 @@ class SignUpViewController: UIViewController {
     
     @IBAction func SignUp_Clicked(_ sender: Any) {
         if email.text?.isEmpty == true{
-            print("Please Enter the E-Mail")
+            let alert = UIAlertController(title: "Error", message: "Please Check Your Email", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         if phone_number.text?.isEmpty == true{
-            print("Please Enter the Phone Number")
+            let alert = UIAlertController(title: "Error", message: "Please Enter the Phone Number", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         if password.text?.isEmpty == true{
-            print("Please Enter the Password")
+            let alert = UIAlertController(title: "Error", message: "Please Enter the Password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         SignUp()
@@ -46,16 +53,25 @@ class SignUpViewController: UIViewController {
     }
     
     func SignUp(){
-        Auth.auth().createUser(withEmail: email.text!,password: password.text!) { (authResult, error) in
-            guard let user = authResult?.user,error == nil else{
-                print("Error \(error?.localizedDescription)")
-                return
+        if(password.text == confPW.text){
+            Auth.auth().createUser(withEmail: email.text!,password: password.text!) { (authResult, error) in
+                guard let user = authResult?.user,error == nil else{
+                    print("Error \(error?.localizedDescription)")
+                    return
+                }
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(identifier: "Allow_Location" )
+                vc.modalPresentationStyle = .overFullScreen
+                self.present(vc, animated: true)
             }
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "Allow_Location" )
-            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: true)
         }
+        else{
+            let alert = UIAlertController(title: "Error", message: "Password Didnt Match", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
     }
     /*
     // MARK: - Navigation

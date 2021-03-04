@@ -12,7 +12,6 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
-    
     @IBAction func Login_Clicked(_ sender: Any) {
         validate()
     }
@@ -23,14 +22,24 @@ class LoginViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
+    @IBAction func btnForgetPWClick(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ForgetPW" )
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
     
     func validate(){
         if email.text?.isEmpty == true{
-            print("Please Enter the E-Mail")
+            let alert = UIAlertController(title: "Error", message: "Please Check Your Email and Password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         if password.text?.isEmpty == true{
-            print("Please Enter the Password")
+            let alert = UIAlertController(title: "Error", message: "Please Check Your Email and Password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         Login()
