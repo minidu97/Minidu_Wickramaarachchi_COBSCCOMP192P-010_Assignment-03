@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -59,6 +60,10 @@ class SignUpViewController: UIViewController {
                     print("Error \(error?.localizedDescription)")
                     return
                 }
+                var ref : DatabaseReference!
+                ref = Database.database().reference()
+                ref.child("users").child(user.uid).setValue(["email": self.email])
+                ref.child("users").child(user.uid).setValue(["mobile": self.phone_number])
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(identifier: "Allow_Location" )
                 vc.modalPresentationStyle = .overFullScreen
