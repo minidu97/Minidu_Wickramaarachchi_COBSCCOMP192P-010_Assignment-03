@@ -49,7 +49,6 @@ class FoodViewController: UIViewController, UITableViewDataSource,UITableViewDel
             FoodItems.Price.text = "Rs. " + String(self.Price[indexPath.row])
             FoodItems.Percentage.text = self.Percentage[indexPath.row]
             if(FoodItems.Percentage.text == ("0%"))
-            
             {
                 FoodItems.Percentage.isHidden = true;
             }
