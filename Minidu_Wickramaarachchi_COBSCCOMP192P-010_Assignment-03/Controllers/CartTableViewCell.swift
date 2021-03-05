@@ -14,6 +14,8 @@ class CartTableViewCell: UITableViewCell {
     @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var lblCount: UILabel!
     @IBOutlet weak var lblPrice: UILabel!
+    var cur = 0;
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,5 +26,15 @@ class CartTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func BtnAdd(_ sender: Any) {
+        cur = Int(lblCount.text!)!;
+        self.lblCount.text = String(cur + 1);
+    }
+    @IBAction func BtnMinus(_ sender: Any) {
+        cur = Int(lblCount.text!)!;
+        self.lblCount.text = String(cur - 1);
+    }
+    
 
 }

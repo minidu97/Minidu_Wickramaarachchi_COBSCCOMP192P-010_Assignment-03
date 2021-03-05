@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class OrderViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
 
     @IBOutlet weak var OrderTableView: UITableView!
-    
+    var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
         OrderTableView.dataSource = self
@@ -29,10 +32,9 @@ class OrderViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Orders = OrderTableView.dequeueReusableCell(withIdentifier: "OrderItems", for: indexPath) as! OrdersTableViewCell
         Orders.lblOrderId.text = self.lblOrder[indexPath.row]
-                    Orders.lblTimeLeft.text = self.lblTimeLeft[indexPath.row]
-                    return Orders
+        Orders.lblTimeLeft.text = self.lblTimeLeft[indexPath.row]
+        return Orders
     }
-    
         
     }
     

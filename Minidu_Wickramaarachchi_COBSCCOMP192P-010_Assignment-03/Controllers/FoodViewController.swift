@@ -13,6 +13,8 @@ class FoodViewController: UIViewController, UITableViewDataSource,UITableViewDel
     @IBOutlet weak var cartView: UITableView!
     @IBOutlet weak var ItemView: UITableView!
     @IBOutlet weak var FoodItemTable: UITableView!
+    
+    var cur = 1;
     let FoodName  = [("Food 01"),("Food 02"),("Food 03")]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,7 @@ class FoodViewController: UIViewController, UITableViewDataSource,UITableViewDel
             FoodItems.Price.text = "Rs. " + String(self.Price[indexPath.row])
             FoodItems.Percentage.text = self.Percentage[indexPath.row]
             if(FoodItems.Percentage.text == ("0%"))
+            
             {
                 FoodItems.Percentage.isHidden = true;
             }
@@ -61,11 +64,14 @@ class FoodViewController: UIViewController, UITableViewDataSource,UITableViewDel
             let cartCell = cartView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath) as! CartTableViewCell
             cartCell.lblName.text = self.FoodName[indexPath.row]
             return cartCell
+            
+            
         }
         else
         {
             return UITableViewCell()
         }
+        
 
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -77,6 +83,9 @@ class FoodViewController: UIViewController, UITableViewDataSource,UITableViewDel
         CatogaryCell.LblCatogary.text = self.Catogary[indexPath.row]
         return CatogaryCell
     }
+    
+
+    
     /*
     // MARK: - Navigation
 
