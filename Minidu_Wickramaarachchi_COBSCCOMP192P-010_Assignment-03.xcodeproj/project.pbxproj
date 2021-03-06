@@ -13,6 +13,8 @@
 		924ED37525F1158F00D4FC4C /* ForgetPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924ED37425F1158F00D4FC4C /* ForgetPWViewController.swift */; };
 		9258D21125F1FCF100B67B04 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258D21025F1FCF100B67B04 /* LocationViewController.swift */; };
 		9258D21425F2229900B67B04 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258D21325F2229900B67B04 /* DescriptionViewController.swift */; };
+		92B1D83525F33FD900474543 /* UpdateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B1D83425F33FD900474543 /* UpdateDetailsViewController.swift */; };
+		92B1D83825F3429F00474543 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B1D83725F3429F00474543 /* DetailViewController.swift */; };
 		92C64CAD25EF59C6007521FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C64CAC25EF59C6007521FD /* LoginViewController.swift */; };
 		92C64CB025EF59EA007521FD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C64CAF25EF59EA007521FD /* SignUpViewController.swift */; };
 		92CB7F0925EBC235004BFAA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92CB7F0825EBC235004BFAA9 /* GoogleService-Info.plist */; };
@@ -35,6 +37,8 @@
 		924ED37425F1158F00D4FC4C /* ForgetPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPWViewController.swift; sourceTree = "<group>"; };
 		9258D21025F1FCF100B67B04 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		9258D21325F2229900B67B04 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		92B1D83425F33FD900474543 /* UpdateDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetailsViewController.swift; sourceTree = "<group>"; };
+		92B1D83725F3429F00474543 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		92C64CAC25EF59C6007521FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92C64CAF25EF59EA007521FD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		92CB7F0825EBC235004BFAA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				924ED37425F1158F00D4FC4C /* ForgetPWViewController.swift */,
 				9258D21025F1FCF100B67B04 /* LocationViewController.swift */,
 				9258D21325F2229900B67B04 /* DescriptionViewController.swift */,
+				92B1D83425F33FD900474543 /* UpdateDetailsViewController.swift */,
+				92B1D83725F3429F00474543 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,12 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B1D83525F33FD900474543 /* UpdateDetailsViewController.swift in Sources */,
 				92DCE55125F0C4B400109268 /* FoodItemTableViewCell.swift in Sources */,
 				9258D21425F2229900B67B04 /* DescriptionViewController.swift in Sources */,
 				92DCE54025F09E6F00109268 /* CartTableViewCell.swift in Sources */,
 				92C64CB025EF59EA007521FD /* SignUpViewController.swift in Sources */,
 				92DCE54325F09FB000109268 /* FoodViewController.swift in Sources */,
 				92F6A99625E8E01800381587 /* ViewController.swift in Sources */,
+				92B1D83825F3429F00474543 /* DetailViewController.swift in Sources */,
 				92F6A99225E8E01800381587 /* AppDelegate.swift in Sources */,
 				924ED36B25F0E3B600D4FC4C /* OrdersTableViewCell.swift in Sources */,
 				9258D21125F1FCF100B67B04 /* LocationViewController.swift in Sources */,

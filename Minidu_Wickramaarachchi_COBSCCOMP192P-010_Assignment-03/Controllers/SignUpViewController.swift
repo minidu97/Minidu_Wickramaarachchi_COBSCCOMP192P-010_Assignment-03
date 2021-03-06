@@ -27,19 +27,19 @@ class SignUpViewController: UIViewController {
     
     @IBAction func SignUp_Clicked(_ sender: Any) {
         if email.text?.isEmpty == true{
-            let alert = UIAlertController(title: "Error", message: "Please Check Your Email", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Check Your Email", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
         }
         if phone_number.text?.isEmpty == true{
-            let alert = UIAlertController(title: "Error", message: "Please Enter the Phone Number", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Enter the Phone Number", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
         }
         if password.text?.isEmpty == true{
-            let alert = UIAlertController(title: "Error", message: "Please Enter the Password", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Enter the Password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
