@@ -25,10 +25,11 @@ class UpdateDetailsViewController: UIViewController {
     }
     
     @IBAction func btnBack(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "AccountDetails" )
+        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "TabBar" )
         vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+        present(vc, animated: true)*/
+        self.dismiss(animated: true)
     }
     
     /*

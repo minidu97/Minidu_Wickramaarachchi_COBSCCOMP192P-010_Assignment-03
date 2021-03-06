@@ -22,10 +22,11 @@ class DescriptionViewController: UIViewController {
     }
     
     @IBAction func btnbackClick(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "FoodView" )
         vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+        present(vc, animated: true)*/
+        self.dismiss(animated: true)
     }
     
     /*

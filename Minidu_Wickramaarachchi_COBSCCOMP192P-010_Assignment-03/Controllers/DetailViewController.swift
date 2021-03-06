@@ -7,8 +7,8 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-
+class DetailViewController: UIViewController {    
+    @IBOutlet weak var ItemTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
