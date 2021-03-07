@@ -86,6 +86,7 @@ class UpdateDetailsViewController: UIViewController, UIImagePickerControllerDele
         present(vc, animated: true)*/
         self.dismiss(animated: true)
     }
+
     
     /*
     // MARK: - Navigation

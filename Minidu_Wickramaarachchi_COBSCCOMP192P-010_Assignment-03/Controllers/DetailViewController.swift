@@ -8,13 +8,16 @@
 import UIKit
 
 class DetailViewController: UIViewController {    
+    @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var ItemTableView: UITableView!
+    let image1 = "https://firebasestorage.googleapis.com/v0/b/nibmcafateria.appspot.com/o/images%2Ffiles.png?alt=media&token=0bb9e078-bdde-41fb-adff-bb4e31b13816"
     override func viewDidLoad() {
         super.viewDidLoad()
+        Image.load(urlString: image1)
+
 
         // Do any additional setup after loading the view.
     }
-    
     @IBAction func btnUpdateInfoClick(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "UpdateAccount" )
@@ -32,4 +35,20 @@ class DetailViewController: UIViewController {
     }
     */
 
+}
+extension UIImageView {
+    func load(urlString : String) {
+        guard let url = URL(string: urlString)else {
+            return
+        }
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }

@@ -581,6 +581,7 @@
                     <tabBarItem key="tabBarItem" title="Account" id="qtQ-6r-nVQ"/>
                     <navigationItem key="navigationItem" id="NP3-oW-TgJ"/>
                     <connections>
+                        <outlet property="Image" destination="7G1-vK-Yl6" id="9HC-gh-Duc"/>
                         <outlet property="ItemTableView" destination="0cQ-HK-zhy" id="wVt-Pa-x73"/>
                     </connections>
                 </viewController>
