@@ -80,11 +80,11 @@ class UpdateDetailsViewController: UIViewController, UIImagePickerControllerDele
     }
     
     @IBAction func btnBack(_ sender: Any) {
-        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "TabBar" )
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "UpdateAccount" )
         vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)*/
-        self.dismiss(animated: true)
+        present(vc, animated: true)
+        //self.dismiss(animated: true)
     }
 
     
@@ -97,5 +97,6 @@ class UpdateDetailsViewController: UIViewController, UIImagePickerControllerDele
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
