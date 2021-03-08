@@ -17,6 +17,13 @@ class DescriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //ImageView.image = self.ImageView[indexPath.row]
+        self.FName.text = "Hot Dog"
+        self.Price.text = "Rs. 200"
+        self.Offer.text = "10% OFF"
+        self.Image.image = UIImage(named: "HotDog2")
+        self.Description.text = "It is a universal fact that you can't enjoy your happy moments without good food, but is it worth spending all your time in the kitchen to prepare something good and miss all the fun! Well, we have a delicious fix for all your happy moments with friends and family. Chicken hot dog is perfect for such occasions. All you need is a few ingredients in place, just add in the ingredients and enjoy. Here's a simple recipe of chicken hot dog that you can make in just 10 minutes. So, without wasting any more time, just be a smart home chef and woo your loved ones with this awesome delight."
+
 
         // Do any additional setup after loading the view.
     }
@@ -29,6 +36,10 @@ class DescriptionViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
+    @IBAction func btnAddtoCart(_ sender: Any) {
+        self.dismiss(animated: true)
+        //FoodView
+    }
     /*
     // MARK: - Navigation
 

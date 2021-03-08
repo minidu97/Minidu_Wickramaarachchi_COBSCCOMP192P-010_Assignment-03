@@ -10,10 +10,14 @@ import UIKit
 class DetailViewController: UIViewController {    
     @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var ItemTableView: UITableView!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var contactnumber: UILabel!
     let image1 = "https://firebasestorage.googleapis.com/v0/b/nibmcafateria.appspot.com/o/images%2Ffiles.png?alt=media&token=0bb9e078-bdde-41fb-adff-bb4e31b13816"
     override func viewDidLoad() {
         super.viewDidLoad()
         Image.load(urlString: image1)
+        self.contactnumber.text = "0716950344"
+        self.username.text = "trendymaxxx@gmail.com"
 
 
         // Do any additional setup after loading the view.
@@ -24,6 +28,7 @@ class DetailViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
+
     
     /*
     // MARK: - Navigation

@@ -81,7 +81,7 @@ class UpdateDetailsViewController: UIViewController, UIImagePickerControllerDele
     
     @IBAction func btnBack(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "UpdateAccount" )
+        let vc = storyboard.instantiateViewController(identifier: "TabBar" )
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
         //self.dismiss(animated: true)

@@ -15,7 +15,7 @@ class FoodViewController: UIViewController, UITableViewDataSource,UITableViewDel
     @IBOutlet weak var FoodItemTable: UITableView!
     
     var cur = 1;
-    let FoodName  = [("Food 01"),("Food 02"),("Food 03")]
+    let FoodName  = [("HotDog"),("HotDog Long"),("Pizza")]
     override func viewDidLoad() {
         super.viewDidLoad()
         cartView.dataSource = self
@@ -26,7 +26,7 @@ class FoodViewController: UIViewController, UITableViewDataSource,UITableViewDel
     }
         
     let Catogary  = [("Catogary 01"),("Catogary 02"),("Catogary 03"),("Catogary 04")]
-    let FoodName2 = [("HotDog"),("HotDog2"),("Pizza")]
+    let FoodName2 = [("HotDog"),("HotDog Long"),("Pizza")]
     let FoodDiscription = [("Sample 02"),("Sample 03"),("Sample 04")]
     let Price = [(200),(300),(400)]
     let ImageView = [UIImage(named: "HotDog2"),
