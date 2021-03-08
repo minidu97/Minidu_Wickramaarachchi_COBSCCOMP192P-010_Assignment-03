@@ -15,6 +15,8 @@ class AccItemTableViewCell: UITableViewCell {
     @IBOutlet weak var item1price: UILabel!
     @IBOutlet weak var item2price: UILabel!
     @IBOutlet weak var totalprice: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var price: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
